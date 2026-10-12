@@ -7,10 +7,11 @@
   <meta name="description" content="Landes Landes Innovation Inc. is a Delaware software company. We make Orchid, a financial wellness app for iPhone and Android.">
   <link rel="canonical" href="https://www.landeslandes.com/">
   <meta property="og:title" content="Landes Landes Innovation Inc.">
-  <meta property="og:description" content="A Delaware software company. Makers of Orchid, a financial wellness app.">
+  <meta property="og:description" content="Landes Landes Innovation Inc. is a Delaware software company. We make Orchid, a financial wellness app for iPhone and Android.">
   <meta property="og:url" content="https://www.landeslandes.com/">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233f6b35'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23fbf7ef' text-anchor='middle'%3ELL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,78 +38,22 @@
     }
   }
   </script>
-  <style>
-    :root {
-      --bg: #fbf7ef;
-      --surface: #ffffff;
-      --ink: #1f2a1c;
-      --muted: #5b6656;
-      --line: #e6dfd0;
-      --accent: #3f6b35;
-      --accent-ink: #fbf7ef;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #141a12;
-        --surface: #1c2419;
-        --ink: #eef1ea;
-        --muted: #a9b3a3;
-        --line: #2e3a2a;
-        --accent: #8fbf7f;
-        --accent-ink: #141a12;
-      }
-    }
-    * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    }
-    a { color: var(--accent); text-underline-offset: 3px; }
-    .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
-    header { padding: 28px 0; border-bottom: 1px solid var(--line); }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 650; letter-spacing: -0.01em; }
-    .mark {
-      width: 36px; height: 36px; border-radius: 9px; flex: none;
-      display: grid; place-items: center;
-      background: var(--accent); color: var(--accent-ink);
-      font: 600 17px/1 Georgia, "Times New Roman", serif;
-    }
-    main { padding: 56px 0 40px; }
-    h1 {
-      font-size: clamp(30px, 6vw, 44px); line-height: 1.15;
-      letter-spacing: -0.02em; margin: 0 0 18px; font-weight: 700;
-    }
-    .lede { font-size: 19px; color: var(--muted); margin: 0 0 48px; max-width: 36em; }
-    h2 { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; font-weight: 600; }
-    section { margin-bottom: 44px; }
-    .card {
-      background: var(--surface); border: 1px solid var(--line);
-      border-radius: 14px; padding: 24px;
-    }
-    .card h3 { margin: 0 0 6px; font-size: 21px; }
-    .card p { margin: 0 0 14px; color: var(--muted); }
-    .card p:last-child { margin-bottom: 0; }
-    .facts { display: grid; grid-template-columns: max-content 1fr; gap: 10px 24px; margin: 0; }
-    .facts dt { color: var(--muted); }
-    .facts dd { margin: 0; }
-    address { font-style: normal; }
-    footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 15px; }
-    footer .links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 10px; }
-    @media (max-width: 520px) {
-      main { padding-top: 40px; }
-      .facts { grid-template-columns: 1fr; gap: 2px; }
-      .facts dd { margin-bottom: 12px; }
-    }
-  </style>
 </head>
 <body>
   <header>
-    <div class="wrap brand">
-      <span class="mark" aria-hidden="true">LL</span>
-      <span>Landes Landes Innovation Inc.</span>
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="mark" aria-hidden="true">LL</span>
+        <span>Landes Landes Innovation Inc.</span>
+      </a>
+      <nav aria-label="Main">
+        <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/orchid">Orchid</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -123,14 +68,44 @@
 
     <section aria-labelledby="products">
       <h2 id="products">Our product</h2>
-      <div class="card">
-        <h3>Orchid</h3>
-        <p>
-          A financial wellness app that turns healthy money habits into a
-          garden you grow. Connect your accounts, complete small daily quests,
-          and watch your garden and your companion grow with you.
-        </p>
-        <p><a href="https://www.orchidmoney.app/">Visit orchidmoney.app</a></p>
+      <div class="card product">
+        <img src="/images/orchid-icon.png" alt="Orchid app icon" width="72" height="72">
+        <div>
+          <h3>Orchid</h3>
+          <p>
+            A financial wellness app that turns healthy money habits into a
+            garden you grow. Connect your accounts, complete small daily quests,
+            and watch your garden and your companion grow with you.
+          </p>
+          <p><a href="/orchid">Learn more about Orchid</a> &middot; <a href="https://www.orchidmoney.app/">orchidmoney.app</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="preview">
+      <h2 id="preview">A look inside</h2>
+      <div class="shots">
+        <figure><img src="/images/01-home.jpg" alt="Orchid home screen with Pip, the garden, and today's quests" width="600" height="1303" loading="lazy"></figure>
+        <figure><img src="/images/03-goals.jpg" alt="Orchid savings goals screen" width="600" height="1303" loading="lazy"></figure>
+        <figure><img src="/images/06-garden.jpg" alt="Orchid garden screen" width="600" height="1303" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="approach">
+      <h2 id="approach">How we work</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Small steps</h3>
+          <p>We design for habits people can keep, not big promises. A few minutes a day is enough to make progress.</p>
+        </div>
+        <div class="card">
+          <h3>Privacy first</h3>
+          <p>We collect only what the app needs to work and let people delete their account at any time.</p>
+        </div>
+        <div class="card">
+          <h3>Honest by design</h3>
+          <p>Our apps are tools for tracking and learning. We are not a bank, and we say so plainly.</p>
+        </div>
       </div>
     </section>
 
@@ -157,11 +132,13 @@
   <footer>
     <div class="wrap">
       <div class="links">
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
         <a href="https://www.orchidmoney.app/privacy">Privacy Policy</a>
         <a href="https://www.orchidmoney.app/terms">Terms of Service</a>
-        <a href="https://www.orchidmoney.app/">Orchid</a>
       </div>
-      <p>&copy; 2026 Landes Landes Innovation Inc. All rights reserved.</p>
+      <p>&copy; 2026 Landes Landes Innovation Inc. All rights reserved.<br>
+      8 The Green, Ste A, Dover, DE 19901, United States</p>
     </div>
   </footer>
 </body>
